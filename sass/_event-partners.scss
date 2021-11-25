@@ -1,0 +1,8 @@
+.event-partners {
+    padding-bottom: 100px;
+    &__cards {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}

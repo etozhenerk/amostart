@@ -1,0 +1,20 @@
+.container {
+  width: 1020px;
+  margin: 0 auto;
+}
+.elem--block {
+  display: block;
+}
+.color--blue {
+    color: $blue;
+}
+.section {
+  &__title {
+    font-weight: bold;
+    font-size: 37px;
+    line-height: 43px;
+    text-transform: uppercase;
+    color: $section-title;
+    margin-bottom: 31px;
+  }
+}

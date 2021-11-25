@@ -1,0 +1,43 @@
+.map {
+    margin-bottom: 100px;
+  &__block {
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  &__info {
+    padding: 45px 30px;
+    background: rgba(103, 173, 255, 0.2);
+    backdrop-filter: blur(15px);
+  }
+  &__date {
+    display: block;
+    color: $blue;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+  }
+  &__place-name {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  &__place-adress {
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.9px;
+    margin-bottom: 12px;
+  }
+  &__place-route {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.9px;
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACK,AAAD,sBAAQ,AAAC,CACL,OAAO,CAAE,IAAI,CACb,WAAW,CAAE,MAAM,CACnB,eAAe,CAAE,aAAa,CACjC,AACA,AAAD,qBAAO,AAAC,CACJ,UAAU,CAAE,MAAM,CACrB",
+    "sources": [
+        "../sass/event-partners.scss"
+    ],
+    "names": [],
+    "file": "event-partners.min.css"
+}

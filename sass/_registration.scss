@@ -1,0 +1,29 @@
+.registration {
+  padding-bottom: 100px;
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 31px;
+  }
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 63px;
+    background-color: $gray-light;
+    color: $black;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.3px;
+    &:last-child {
+      padding: 18px 37px;
+    }
+    &:nth-child(3) {
+      padding: 18px 66px;
+    }
+  }
+  &__logo {
+    margin-right: 10px;
+  }
+}

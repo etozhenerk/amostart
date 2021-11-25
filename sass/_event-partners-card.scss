@@ -1,0 +1,16 @@
+.event-partners-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 140px;
+  &__title {
+    display: block;
+    color: $gray-black;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+}

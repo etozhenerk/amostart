@@ -1,0 +1,24 @@
+.stats {
+    padding-top: 77px;
+    padding-bottom: 66px;
+  &__container {
+    width: 871px;
+    display: grid;
+    grid-template-columns:repeat(3, 224px);
+    justify-content:space-between;
+    text-align: center;
+    margin: 0 auto;
+  }
+  &__number {
+    font-weight: bold;
+    font-size: 88px;
+    line-height: 103px;
+    margin-bottom: 14px;
+  }
+  &__info {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+  }
+}

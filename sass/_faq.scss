@@ -1,0 +1,36 @@
+.faq {
+  margin-bottom: 100px;
+  &__item {
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    cursor: pointer;
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      background-color: rgba(206, 206, 206, 0.3);
+    }
+  }
+  &__question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 140%;
+    letter-spacing: 0.9px;
+    margin-bottom: 5px;
+  }
+  &__answer {
+    display: none;
+    max-width: 955px;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 1.5px;
+    color: $gray-light;
+  }
+}
