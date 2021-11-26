@@ -1,8 +1,28 @@
 .event-partners {
-    padding-bottom: 100px;
-    &__cards {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
+  padding-bottom: 100px;
+  &__title {
+    display: block;
+    color: $gray-black;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 34px;
+    text-align: center;
+  }
+  &__cards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &__images {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-around;
+      flex-wrap: wrap;
+  }
+  &__img {
+      margin-right: 30px;
+      margin-bottom: 40px;
+  }
 }

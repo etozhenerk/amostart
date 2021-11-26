@@ -1,41 +1,34 @@
 .header {
-  position: relative;
   text-align: center;
-  z-index: 1;
-  background-image: url("../img/header/bg.png");
-  ::before {
+  position: relative;
+  &::after {
     position: absolute;
-    content: "";
-    z-index: -1;
-    background-color: rgba($color: #000000, $alpha: 0.1);
-    opacity: 0.3;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+    z-index: 100;
+    content: "COVID FREE";
+    font-weight: bold;
+    font-size: 26px;
+    padding: 15px 19px;
+    color: $white;
+    top: 8%;
+    right: 0;
+    background-color: $pink;
+    @media(max-width: 1200px) {
+      font-size: 16px;
+      top: 10%;
+    }
+    @media(max-width: 992px) {
+      display: none;
+    }
   }
   &__top {
-    display: grid;
-    grid-template-columns: 164px auto;
+    display: flex;
     align-items: center;
-    justify-items: self-end;
+    justify-content: space-between;
     padding-top: 55px;
     padding-bottom: 49px;
   }
   &__info {
     position: relative;
-    &::after {
-      position: absolute;
-      z-index: 100;
-      content: "COVID FREE";
-      font-weight: bold;
-      font-size: 26px;
-      padding: 15px 19px;
-      color: $white;
-      top: -20px;
-      right: -345px;
-      background-color: $pink;
-    }
   }
   &__link {
     text-decoration: none;

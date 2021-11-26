@@ -1,0 +1,33 @@
+.carousel__slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  &:not(.is-selected) {
+    .slide {
+      transform: scale(0.7);
+    }
+  }
+}
+.carousel__button.is-prev {
+  left: 547px;
+}
+
+.carousel__button.is-next {
+  right: 547px;
+}
+.carousel__dot {
+  margin-right: 45px !important;
+  &::after {
+    width: 60px !important;
+    height: 2px !important;
+    border-radius: 0 !important;
+    color: white;
+  }
+}
+.slide {
+  width: 752px;
+  padding: 20px;
+  background-image: url("../img/slider/bg.jpeg");
+  height: 453px;
+}

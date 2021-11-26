@@ -1,5 +1,35 @@
 .partners {
   &__cards {
-      display: flex;
+    display: flex;
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__card {
+    margin-bottom: 30px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+    &:first-child {
+      .card__bg {
+        background-image: url("../img/partners/card-1.png");
+      }
+    }
+    &:nth-child(2) {
+      .card__bg {
+        background-image: url("../img/partners/card-2.png");
+      }
+    }
+    &:nth-child(3) {
+      .card__bg {
+        background-image: url("../img/partners/card-3.png");
+      }
+    }
+    &:nth-child(4) {
+      .card__bg {
+        background-image: url("../img/partners/card-4.png");
+      }
+    }
   }
 }

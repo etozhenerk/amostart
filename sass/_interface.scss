@@ -1,12 +1,18 @@
 .container {
-  width: 1020px;
+  max-width: 1020px;
   margin: 0 auto;
+  @media (max-width: 1260px) {
+    max-width: 960px;
+  }
+  @media (max-width: 992px) {
+    max-width: 750px;
+  }
 }
 .elem--block {
   display: block;
 }
 .color--blue {
-    color: $blue;
+  color: $blue;
 }
 .section {
   &__title {
@@ -16,5 +22,27 @@
     text-transform: uppercase;
     color: $section-title;
     margin-bottom: 31px;
+    @media (max-width: 1200px) {
+      text-align: center;
+    }
+  }
+}
+body {
+  background-image: url("../img/bg.png");
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.hidden{
+  &-mobile{
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+  &-desktop{
+    display: none;
+    @media (max-width: 992px) {
+      display: block;
+    }
   }
 }

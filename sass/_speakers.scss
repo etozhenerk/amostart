@@ -1,6 +1,54 @@
 .speakers {
   &__cards {
-      display: flex;
-      flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: 1200px) {
+      justify-content: center;
+    }
+  }
+  &__card {
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+    &:first-child {
+      .card__bg {
+        background-image: url("../img/speakers/card-1.png");
+      }
+    }
+    &:nth-child(2) {
+      .card__bg {
+        background-image: url("../img/speakers/card-2.png");
+      }
+    }
+    &:nth-child(3) {
+      .card__bg {
+        background-image: url("../img/speakers/card-3.png");
+      }
+    }
+    &:nth-child(4) {
+      .card__bg {
+        background-image: url("../img/speakers/card-4.png");
+      }
+    }
+    &:nth-child(5) {
+      .card__bg {
+        background-image: url("../img/speakers/card-5.png");
+      }
+    }
+    &:nth-child(6) {
+      .card__bg {
+        background-image: url("../img/speakers/card-6.png");
+      }
+    }
+    &:nth-child(7) {
+      .card__bg {
+        background-image: url("../img/speakers/card-7.png");
+      }
+    }
+    &:nth-child(8) {
+      .card__bg {
+        background-image: url("../img/speakers/card-1.png");
+      }
+    }
   }
 }

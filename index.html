@@ -10,6 +10,8 @@
     />
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&amp;subset=cyrillic" rel="stylesheet" />
     <!-- <link rel="stylesheet" href="./css/styles.min.css" /> -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body>
@@ -73,7 +75,28 @@
         <div class="header__buttons">
           <button class="header__button">стать участником</button>
         </div>
-        <div class="header__slider">slider</div>
+      </div>
+      <div class="slider">
+        <div class="carousel">
+          <div class="carousel__slide">
+            <div class="slide video">
+              <span class="slide__date">Амоконф 2019</span>
+              <span class="slide__count">45000 участников</span>
+            </div>
+          </div>
+          <div class="carousel__slide">
+            <div class="slide">
+              <span class="slide__date">Амоконф 2019</span>
+              <span class="slide__count">45000 участников</span>
+            </div>
+          </div>
+          <div class="carousel__slide">
+            <div class="slide">
+              <span class="slide__date">Амоконф 2019</span>
+              <span class="slide__count">45000 участников</span>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -99,55 +122,84 @@
         <div class="container">
           <h3 class="speakers__title section__title">Спикеры</h3>
           <div class="speakers__cards">
-            <div class="speaker__card speaker-card">
-              <div class="speaker-card__bg"></div>
-              <div class="speaker-card__info">
-                <div class="speaker-card__name">Игорь Стоянов</div>
-                <div class="speaker-card__description">Основатель легендарного бьюти-бренда «Персона»</div>
+            <div class="speakers__card speaker-card card card--regular">
+              <div class="card__bg"></div>
+              <div class="card__info">
+                <div class="card__name"><span class="elem--block">Игорь</span> Стоянов</div>
+                <div class="card__description">Основатель легендарного бьюти-бренда «Персона»</div>
               </div>
             </div>
-            <div class="speaker__card speaker-card speaker-card--medium">
-              <div class="speaker-card__bg"></div>
-              <div class="speaker-card__info">
-                <div class="speaker-card__name">Игорь Стоянов</div>
-                <div class="speaker-card__description">Основатель легендарного бьюти-бренда «Персона»</div>
+            <div class="speakers__card speaker-card card card--medium">
+              <div class="card__bg"></div>
+              <div class="card__info">
+                <div class="card__name"><span class="elem--block">Игорь</span> Стоянов</div>
+                <div class="card__description">Основатель легендарного бьюти-бренда «Персона»</div>
+              </div>
+              <div class="card__text">
+                Компания, которая в 90-х годах сформировала не только имидж и стиль нескольких поколений россиян, но и
+                задала новейшие бизнес-тренды в консервативной и неторопливой бьюти-среде. Сейчас компания формируется
+                как бизнес-сообщество, опираясь на образование, уникальную систему управления салонами, брендом и
+                современные диджитал-технологии.
               </div>
             </div>
-            <div class="speaker__card speaker-card speaker-card--medium">
-              <div class="speaker-card__bg"></div>
-              <div class="speaker-card__info">
-                <div class="speaker-card__name">Игорь Стоянов</div>
-                <div class="speaker-card__description">Основатель легендарного бьюти-бренда «Персона»</div>
+            <div class="speakers__card speaker-card card card--medium">
+              <div class="card__bg"></div>
+              <div class="card__info">
+                <div class="card__name"><span class="elem--block">Игорь</span> Стоянов</div>
+                <div class="card__description">Основатель легендарного бьюти-бренда «Персона»</div>
+              </div>
+              <div class="card__text">
+                Компания, которая в 90-х годах сформировала не только имидж и стиль нескольких поколений россиян, но и
+                задала новейшие бизнес-тренды в консервативной и неторопливой бьюти-среде. Сейчас компания формируется
+                как бизнес-сообщество, опираясь на образование, уникальную систему управления салонами, брендом и
+                современные диджитал-технологии.
               </div>
             </div>
-            <div class="speaker__card speaker-card">
-              <div class="speaker-card__info">
-                <div class="speaker-card__name">Игорь Стоянов</div>
-                <div class="speaker-card__description">Основатель легендарного бьюти-бренда «Персона»</div>
+            <div class="speakers__card speaker-card card card--regular">
+              <div class="card__bg"></div>
+              <div class="card__info">
+                <div class="card__name"><span class="elem--block">Игорь</span> Стоянов</div>
+                <div class="card__description">Основатель легендарного бьюти-бренда «Персона»</div>
               </div>
             </div>
-            <div class="speaker__card speaker-card">
-              <div class="speaker-card__info">
-                <div class="speaker-card__name">Игорь Стоянов</div>
-                <div class="speaker-card__description">Основатель легендарного бьюти-бренда «Персона»</div>
+            <div class="speakers__card speaker-card card card--regular">
+              <div class="card__bg"></div>
+              <div class="card__info">
+                <div class="card__name"><span class="elem--block">Игорь</span> Стоянов</div>
+                <div class="card__description">Основатель легендарного бьюти-бренда «Персона»</div>
               </div>
             </div>
-            <div class="speaker__card speaker-card speaker-card--medium">
-              <div class="speaker-card__info">
-                <div class="speaker-card__name">Игорь Стоянов</div>
-                <div class="speaker-card__description">Основатель легендарного бьюти-бренда «Персона»</div>
+            <div class="speakers__card speaker-card card card--medium">
+              <div class="card__bg"></div>
+              <div class="card__info">
+                <div class="card__name"><span class="elem--block">Игорь</span> Стоянов</div>
+                <div class="card__description">Основатель легендарного бьюти-бренда «Персона»</div>
+              </div>
+              <div class="card__text">
+                Компания, которая в 90-х годах сформировала не только имидж и стиль нескольких поколений россиян, но и
+                задала новейшие бизнес-тренды в консервативной и неторопливой бьюти-среде. Сейчас компания формируется
+                как бизнес-сообщество, опираясь на образование, уникальную систему управления салонами, брендом и
+                современные диджитал-технологии.
               </div>
             </div>
-            <div class="speaker__card speaker-card speaker-card--medium">
-              <div class="speaker-card__info">
-                <div class="speaker-card__name">Игорь Стоянов</div>
-                <div class="speaker-card__description">Основатель легендарного бьюти-бренда «Персона»</div>
+            <div class="speakers__card speaker-card card card--medium">
+              <div class="card__bg"></div>
+              <div class="card__info">
+                <div class="card__name"><span class="elem--block">Игорь</span> Стоянов</div>
+                <div class="card__description">Основатель легендарного бьюти-бренда «Персона»</div>
+              </div>
+              <div class="card__text">
+                Компания, которая в 90-х годах сформировала не только имидж и стиль нескольких поколений россиян, но и
+                задала новейшие бизнес-тренды в консервативной и неторопливой бьюти-среде. Сейчас компания формируется
+                как бизнес-сообщество, опираясь на образование, уникальную систему управления салонами, брендом и
+                современные диджитал-технологии.
               </div>
             </div>
-            <div class="speaker__card speaker-card">
-              <div class="speaker-card__info">
-                <div class="speaker-card__name">Игорь Стоянов</div>
-                <div class="speaker-card__description">Основатель легендарного бьюти-бренда «Персона»</div>
+            <div class="speakers__card speaker-card card card--regular">
+              <div class="card__bg"></div>
+              <div class="card__info">
+                <div class="card__name"><span class="elem--block">Игорь</span> Стоянов</div>
+                <div class="card__description">Основатель легендарного бьюти-бренда «Персона»</div>
               </div>
             </div>
           </div>
@@ -157,28 +209,32 @@
         <div class="container">
           <h3 class="partners__title section__title">Партнеры</h3>
           <div class="partners__cards">
-            <div class="partner__card partner-card">
-              <div class="partner-card__info">
-                <div class="partner-card__name">Игорь Стоянов</div>
-                <div class="partner-card__description">Основатель бренда «Персона»</div>
+            <div class="partners__card card card--small">
+              <div class="card__bg"></div>
+              <div class="card__info">
+                <div class="card__name">Игорь Стоянов</div>
+                <div class="card__description"><span class="elem--block">Основатель</span> бренда «Персона»</div>
               </div>
             </div>
-            <div class="partner__card partner-card">
-              <div class="partner-card__info">
-                <div class="partner-card__name">Игорь Стоянов</div>
-                <div class="partner-card__description">Основатель бренда «Персона»</div>
+            <div class="partners__card card card--small">
+              <div class="card__bg"></div>
+              <div class="card__info">
+                <div class="card__name">Игорь Стоянов</div>
+                <div class="card__description"><span class="elem--block">Основатель</span> бренда «Персона»</div>
               </div>
             </div>
-            <div class="partner__card partner-card">
-              <div class="partner-card__info">
-                <div class="partner-card__name">Игорь Стоянов</div>
-                <div class="partner-card__description">Основатель бренда «Персона»</div>
+            <div class="partners__card card card--small">
+              <div class="card__bg"></div>
+              <div class="card__info">
+                <div class="card__name">Игорь Стоянов</div>
+                <div class="card__description"><span class="elem--block">Основатель</span> бренда «Персона»</div>
               </div>
             </div>
-            <div class="partner__card partner-card">
-              <div class="partner-card__info">
-                <div class="partner-card__name">Игорь Стоянов</div>
-                <div class="partner-card__description">Основатель бренда «Персона»</div>
+            <div class="partners__card card card--small">
+              <div class="card__bg"></div>
+              <div class="card__info">
+                <div class="card__name">Игорь Стоянов</div>
+                <div class="card__description"><span class="elem--block">Основатель</span> бренда «Персона»</div>
               </div>
             </div>
           </div>
@@ -186,7 +242,8 @@
       </section>
       <section class="map">
         <div class="container">
-          <h3 class="section__title">Место проведения</h3>
+          <h3 class="section__title hidden-mobile">Место проведения</h3>
+          <h3 class="section__title hidden-desktop">9 НОЯБРЯ 10:00 КОНЦЕРТНЫЙ ЗАЛ «ИЗМАЙЛОВО»</h3>
           <div class="map__block">
             <div class="map__place">
               <iframe
@@ -363,23 +420,66 @@
         </div>
       </div>
     </section>
-    <div class="event-partners">
+    <section class="event-partners">
       <div class="container">
         <div class="event-partners__cards">
           <div class="event-partners__card event-partners-card">
             <span class="event-partners-card__title">Генеральный партнер</span>
-            <img src="./img/event-partners/sellesta.png" alt="selesta" class="event-partners-card__img">
+            <img src="./img/event-partners/sellesta.png" alt="selesta" class="event-partners-card__img" />
           </div>
           <div class="event-partners__card event-partners-card">
             <span class="event-partners-card__title">Официальный партнер</span>
-            <img src="./img/event-partners/uis.png" alt="uis" class="event-partners-card__img">
+            <img src="./img/event-partners/uis.png" alt="uis" class="event-partners-card__img" />
           </div>
           <div class="event-partners__card event-partners-card">
             <span class="event-partners-card__title">Специальный партнер</span>
-            <img src="./img/event-partners/yandex.png" alt="yandex" class="event-partners-card__img">
+            <img src="./img/event-partners/yandex.png" alt="yandex" class="event-partners-card__img" />
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <section class="event-partners">
+      <div class="container">
+        <span class="event-partners__title">Партнеры конференции</span>
+        <div class="event-partners__images">
+          <img src="./img/event-partners/completo.png" alt="selesta" class="event-partners__img" />
+          <img src="./img/event-partners/sellesta.png" alt="selesta" class="event-partners__img" />
+          <img src="./img/event-partners/uis.png" alt="selesta" class="event-partners__img" />
+          <img src="./img/event-partners/jobsa.png" alt="selesta" class="event-partners__img" />
+          <img src="./img/event-partners/sellesta.png" alt="selesta" class="event-partners__img" />
+          <img src="./img/event-partners/uis.png" alt="selesta" class="event-partners__img" />
+          <img src="./img/event-partners/jobsa.png" alt="selesta" class="event-partners__img" />
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__contacts">
+            <div class="footer__container">
+              <span class="footer__copyright">© amoCRM 2009-2021</span>
+              <div class="footer__social">
+                <a href="#" class="footer__link">
+                  <img src="./img/footer/vk.svg" alt="icon" class="footer__icon" />
+                </a>
+                <a href="#" class="footer__link">
+                  <img src="./img/footer/facebook.svg" alt="icon" class="footer__icon" />
+                </a>
+                <a href="#" class="footer__link">
+                  <img src="./img/footer/instagram.svg" alt="icon" class="footer__icon" />
+                </a>
+              </div>
+            </div>
+            <span class="footer__mail">help@crmday.ru</span>
+          </div>
+          <div class="footer__docs">
+            <span class="footer__confidence">Пользовательское соглашение</span>
+            <span class="footer__offer">Договор оферты 18+</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
