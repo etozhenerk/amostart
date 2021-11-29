@@ -1,13 +1,69 @@
-const myCarousel = new Carousel(document.querySelector(".carousel"), {
-  slides: [{ slidesPerPage: 1 }, { center: true }],
-  Navigation: {
-    prevTpl: `<svg width="17" height="29" viewBox="0 0 17 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M15.4601 2.46033L3 14.9204L15.4601 27.3805" stroke="white" stroke-width="3" stroke-linecap="round"/>
-          </svg>
-          `,
-    nextTpl: `<svg width="17" height="29" viewBox="0 0 17 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M2.38074 27.3805L14.8408 14.9204L2.38074 2.46033" stroke="white" stroke-width="3" stroke-linecap="round"/>
-          </svg>
-          `,
+const swiper = new Swiper('.swiper', {
+  loop: false,
+  initialSlide: 1,
+  spaceBetween: 10,
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
   },
+  centeredSlides: true,
+  centeredSlidesBounds: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.slider__button-next',
+    prevEl: '.slider__button-prev',
+  },
+  breakpoints: {
+    992: {
+      spaceBetween: 60
+    }
+  }
 });
+
+const accordeon = () => {
+  const accordeonBlock = document.querySelector(".accordeon"),
+    elements = accordeonBlock.querySelectorAll(".accordeon-element");
+
+  accordeonBlock.addEventListener("click", (e) => {
+    const target = e.target,
+      parent = target.closest(".accordeon-element");
+
+    if (parent) {
+      if (parent.classList.contains("faq__item--active")) {
+        parent.classList.remove("faq__item--active");
+      } else {
+        elements.forEach((elem) => {
+          elem.classList.remove("faq__item--active");
+          if (elem === parent) {
+            elem.classList.add("faq__item--active");
+          }
+        });
+      }
+    }
+  });
+};
+
+const openModal = () => {
+  const overlay = document.querySelector(".overlay");
+  const body = document.querySelector("body");
+
+  const open = () => {
+    overlay.classList.add("overlay--isOpen");
+  }
+  const close = () => {
+    overlay.classList.remove("overlay--isOpen");
+  }
+
+  body.addEventListener('click', e => {
+    const target = e.target;
+    if(target.closest(".card")){
+      open();
+    }
+    if(target.closest(".modal__close") || target === overlay){
+      close();
+    }
+  })
+}
+
+accordeon();
+openModal();

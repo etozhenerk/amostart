@@ -1,24 +1,42 @@
 .stats {
-    padding-top: 77px;
-    padding-bottom: 66px;
+  padding-top: 77px;
+  padding-bottom: 66px;
   &__container {
-    width: 871px;
-    display: grid;
-    grid-template-columns:repeat(3, 224px);
-    justify-content:space-between;
+    display: flex;
+    justify-content: space-around;
     text-align: center;
-    margin: 0 auto;
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__item {
+    @media (max-width: 768px) {
+      &:first-child {
+        flex-basis: 100%;
+        margin-bottom: 17px;
+      }
+    }
   }
   &__number {
     font-weight: bold;
     font-size: 88px;
     line-height: 103px;
     margin-bottom: 14px;
+    &:first-child {
+      font-size: 105px;
+      line-height: 123px;
+    }
   }
   &__info {
     font-weight: 900;
     font-size: 20px;
     line-height: 23px;
     text-transform: uppercase;
+    @media (max-width: 768px) {
+      &:first-child {
+        font-size: 15px;
+        line-height: 18px;
+      }
+    }
   }
 }

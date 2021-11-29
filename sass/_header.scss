@@ -3,7 +3,7 @@
   position: relative;
   &::after {
     position: absolute;
-    z-index: 100;
+    z-index: 2;
     content: "COVID FREE";
     font-weight: bold;
     font-size: 26px;
@@ -12,11 +12,11 @@
     top: 8%;
     right: 0;
     background-color: $pink;
-    @media(max-width: 1200px) {
+    @media (max-width: 1200px) {
       font-size: 16px;
       top: 10%;
     }
-    @media(max-width: 992px) {
+    @media (max-width: 992px) {
       display: none;
     }
   }
@@ -26,9 +26,32 @@
     justify-content: space-between;
     padding-top: 55px;
     padding-bottom: 49px;
+    @media (max-width: 576px) {
+      padding-top: 42px;
+      padding-bottom: 36px;
+    }
   }
   &__info {
     position: relative;
+  }
+  &__menu {
+    display: none;
+    cursor: pointer;
+    @media (max-width: 576px) {
+      display: block;
+      margin-left: 18px;
+      margin-right: auto;
+    }
+  }
+  &__nav {
+    @media (max-width: 576px) {
+      display: none;
+    }
+  }
+  &__logo {
+    @media (max-width: 576px) {
+      margin-right: auto;
+    }
   }
   &__link {
     text-decoration: none;
@@ -53,9 +76,20 @@
     line-height: 30px;
     text-transform: uppercase;
     margin-bottom: 34px;
+    @media (max-width: 576px) {
+      font-size: 21px;
+      line-height: 21px;
+      margin-bottom: 39px;
+    }
   }
-  &__title {
+  &__img {
     margin-bottom: 45px;
+    @media (max-width: 768px) {
+      width: 394px;
+    }
+    @media (max-width: 576px) {
+      margin-bottom: 26px;
+    }
   }
   &__subtitle {
     display: block;
@@ -64,9 +98,16 @@
     line-height: 21px;
     text-transform: uppercase;
     margin-bottom: 20px;
+    @media (max-width: 576px) {
+      margin-bottom: 0;
+      line-height: 22px;
+    }
   }
   &__description {
     margin-bottom: 45px;
+    @media (max-width: 576px) {
+      margin-bottom: 25px;
+    }
   }
   &__text {
     font-weight: normal;
@@ -74,6 +115,10 @@
     line-height: 19px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
+    @media (max-width: 576px) {
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
   &__button {
     padding: 19px 24px;
@@ -87,8 +132,28 @@
     letter-spacing: 1.7px;
     text-transform: uppercase;
     font-family: Roboto, sans-serif;
+    transition: all 0.2s;
+    &:hover {
+      box-shadow: 0px 0px 74px #002EC8;
+    }
   }
   &__buttons {
     margin-bottom: 77px;
+  }
+  &__slider {
+    max-width: 752px;
+    margin: 0 auto;
+    @media (max-width: 992px) {
+      max-width: 750px;
+    }
+    @media (max-width: 768px) {
+      max-width: 560px;
+    }
+    @media (max-width: 576px) {
+      max-width: 350px;
+    }
+    @media (max-width: 453px) {
+      max-width: 276px;
+    }
   }
 }

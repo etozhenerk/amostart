@@ -1,4 +1,7 @@
 .partners {
+  @media (max-width: 576px) {
+    padding-bottom: 70px;
+  }
   &__cards {
     display: flex;
     @media (max-width: 1200px) {
@@ -29,6 +32,24 @@
     &:nth-child(4) {
       .card__bg {
         background-image: url("../img/partners/card-4.png");
+      }
+    }
+    @media (max-width: 1200px) {
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+    @media (max-width: 768px) {
+      margin-right: 30px !important;
+
+      &:nth-child(2n) {
+        margin-right: 0 !important;
+      }
+    }
+    @media (max-width: 576px) {
+      margin-bottom: 8px;
+      &:not(:nth-child(2n)) {
+        margin-right: 8px !important;
       }
     }
   }

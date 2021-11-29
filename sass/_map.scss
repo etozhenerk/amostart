@@ -1,9 +1,12 @@
 .map {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
   &__block {
     display: flex;
     border-radius: 5px;
     overflow: hidden;
+    @media (max-width: 992px) {
+      justify-content: center;
+    }
   }
   &__info {
     padding: 45px 30px;
