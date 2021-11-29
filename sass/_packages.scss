@@ -1,0 +1,12 @@
+.packages {
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__card {
+        margin-bottom: 30px;
+        &:not(:nth-child(2n)){
+            margin-right: 30px;
+        }
+    }
+}

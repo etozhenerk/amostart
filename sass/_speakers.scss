@@ -10,6 +10,7 @@
     }
   }
   &__card {
+    position: relative;
     &:not(:nth-child(2n)) {
       margin-right: 30px;
     }
