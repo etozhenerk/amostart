@@ -1,31 +1,13 @@
 .header {
   text-align: center;
-  position: relative;
-  &::after {
-    position: absolute;
-    z-index: 2;
-    content: "COVID FREE";
-    font-weight: bold;
-    font-size: 26px;
-    padding: 15px 19px;
-    color: $white;
-    top: 8%;
-    right: 0;
-    background-color: $pink;
-    @media (max-width: 1200px) {
-      font-size: 16px;
-      top: 10%;
-    }
-    @media (max-width: 992px) {
-      display: none;
-    }
-  }
+  overflow: hidden;
+  padding-bottom: 77px;
   &__top {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 55px;
-    padding-bottom: 49px;
+    padding-bottom: 44px;
     @media (max-width: 576px) {
       padding-top: 42px;
       padding-bottom: 36px;
@@ -33,6 +15,26 @@
   }
   &__info {
     position: relative;
+    &::after {
+      position: absolute;
+      z-index: 2;
+      content: "COVID FREE";
+      font-weight: bold;
+      font-size: 23px;
+      line-height: 30px;
+      padding: 15px 19px;
+      color: $white;
+      top: -11px;
+      right: -288px;
+      background-color: $pink;
+      @media (max-width: 1200px) {
+        font-size: 16px;
+        top: 10%;
+      }
+      @media (max-width: 992px) {
+        display: none;
+      }
+    }
   }
   &__menu {
     display: none;
@@ -44,11 +46,13 @@
     }
   }
   &__nav {
+    margin-right: 8px;
     @media (max-width: 576px) {
       display: none;
     }
   }
   &__logo {
+    margin-left: 30px;
     @media (max-width: 576px) {
       margin-right: auto;
     }
@@ -63,7 +67,7 @@
     transition: all 0.2s;
     padding-bottom: 6px;
     &:first-child {
-      margin-right: 36px;
+      margin-right: 33px;
     }
     &:hover {
       color: $white;
@@ -71,6 +75,7 @@
     }
   }
   &__locations {
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: bold;
     font-size: 26px;
     line-height: 30px;
@@ -134,7 +139,7 @@
     font-family: Roboto, sans-serif;
     transition: all 0.2s;
     &:hover {
-      box-shadow: 0px 0px 74px #002EC8;
+      box-shadow: 0px 0px 74px #002ec8;
     }
   }
   &__buttons {

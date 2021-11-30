@@ -2,6 +2,9 @@
     &__cards {
         display: flex;
         flex-wrap: wrap;
+        @media (max-width: 1260px) {
+            justify-content: center;
+          }
     }
     &__card {
         margin-bottom: 30px;

@@ -1,0 +1,74 @@
+.info-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 21px;
+  padding-top: 58px;
+  padding-bottom: 56px;
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 26px;
+    color: $link;
+    margin-bottom: 12px;
+  }
+  &__item {
+    position: relative;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.8px;
+    color: $gray-light;
+    padding-left: 17px;
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 8px;
+      height: 4px;
+      width: 4px;
+      border-radius: 50%;
+      background-color: $gray-light;
+    }
+  }
+  &__description {
+    @media (max-width: 992px) {
+      margin-bottom: 25px;
+    }
+  }
+  &__possibilities {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: 576px) {
+      width: 100%;
+    }
+    @media (max-width: 453px) {
+      justify-content: space-around;
+    }
+  }
+  &__possibility {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-basis: 33%;
+    margin-bottom: 27px;
+    & img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 13px;
+    }
+  }
+  &__text {
+    margin-bottom: 35px;
+  }
+  &__button {
+    width: 274px;
+    margin: 0 auto;
+  }
+}

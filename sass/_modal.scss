@@ -11,16 +11,20 @@
   }
 }
 .modal {
+  display: none;
   box-sizing: border-box;
   position: fixed;
-  display: flex;
   left: 50%;
   top: 50%;
+  z-index: 4;
   transform: translate(-50%, -50%);
   background: rgba(108, 131, 255, 0.2);
   backdrop-filter: blur(15px);
   border-radius: 20px;
   color: #e5e5e5;
+  &--isOpen {
+    display: flex;
+  }
   @media (max-width: 828px) {
     flex-direction: column;
     width: 414px;
@@ -87,5 +91,23 @@
     top: 35px;
     right: 35px;
     cursor: pointer;
+  }
+  &-form {
+    padding: 60px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 4;
+    display: none;
+    left: 50%;
+    top: 50%;
+    width: 510px;
+    transform: translate(-50%, -50%);
+    background: rgba(108, 131, 255, 0.5);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    color: #e5e5e5;
+    &--isOpen {
+      display: flex;
+    }
   }
 }

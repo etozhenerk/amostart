@@ -19,6 +19,7 @@
   background-image: url("../img/slider/bg-slide.jpeg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   &__name {
     display: block;
   }
@@ -50,7 +51,7 @@
   &-slide {
     height: 373px !important;
     &-active {
-      height: 400px !important;
+      height: 422px !important;
     }
     @media (max-width: 576px) {
       height: 239px !important;

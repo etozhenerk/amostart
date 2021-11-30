@@ -1,0 +1,13 @@
+.expo {
+  &__cards {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    @media (max-width: 1260px) {
+      justify-content: space-around;
+    }
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
+}

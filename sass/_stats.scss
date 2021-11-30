@@ -1,5 +1,4 @@
 .stats {
-  padding-top: 77px;
   padding-bottom: 66px;
   &__container {
     display: flex;
@@ -19,13 +18,9 @@
   }
   &__number {
     font-weight: bold;
-    font-size: 88px;
-    line-height: 103px;
+    font-size: 94px;
+    line-height: 83px;
     margin-bottom: 14px;
-    &:first-child {
-      font-size: 105px;
-      line-height: 123px;
-    }
   }
   &__info {
     font-weight: 900;

@@ -1,0 +1,92 @@
+.expo-card {
+  display: flex;
+  align-items: flex-start;
+  padding: 0;
+  &--small {
+    width: 320px;
+  }
+  &--big {
+    width: 670px;
+    @media (max-width: 1260px) {
+      width: 320px;
+      .expo-card__img {
+        display: none;
+      }
+    }
+  }
+  &--mobile {
+    @media (max-width: 768px) {
+      flex-direction: column;
+      width: 394px;
+      align-items: stretch;
+    }
+  }
+  &__description {
+    padding-top: 33px;
+    padding-bottom: 33px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 12px;
+    @media (max-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+  &__item {
+    position: relative;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.8px;
+    color: $gray-light;
+    padding-left: 17px;
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 8px;
+      height: 4px;
+      width: 4px;
+      border-radius: 50%;
+      background-color: $gray-light;
+    }
+  }
+  &__list {
+    margin-bottom: 50px;
+  }
+  &__text {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  &__link {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.8px;
+    text-indent: 11px;
+    text-decoration-line: underline;
+    color: $link;
+    text-transform: uppercase;
+  }
+  &__img {
+    display: flex;
+    align-items: flex-end;
+  }
+  &__icon {
+    display: none;
+    width: 35px;
+    height: 35px;
+    background-image: url("../img/faq/open-small.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+}

@@ -9,6 +9,10 @@
       justify-content: center;
     }
   }
+  &__title {
+    line-height: 57px;
+    margin-bottom: 14px;
+  }
   &__card {
     position: relative;
     margin-bottom: 30px;
