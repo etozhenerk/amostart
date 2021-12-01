@@ -11,7 +11,10 @@
     &--active {
       background-color: #253869;
       .faq__answer {
-        display: block;
+        height: 80px;
+        @media (max-width: 768px) {
+          height: 120px;
+        }
       }
       .faq__icon {
         background-image: url("../img/faq/close.svg");
@@ -49,17 +52,19 @@
     letter-spacing: 0.9px;
     margin-bottom: 5px;
     @media (max-width: 768px) {
-      font-size: 14px;
+      font-size: 12px;
       line-height: 17px;
     }
   }
   &__answer {
-    display: none;
+    height: 0;
+    overflow: hidden;
     max-width: 955px;
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 1.5px;
     color: $gray-light;
+    transition: 0.2s all;
     @media (max-width: 768px) {
       font-size: 14px;
       line-height: 17px;

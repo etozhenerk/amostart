@@ -19,30 +19,6 @@ const swiper = new Swiper(".swiper", {
     },
   },
 });
-
-const accordeon = () => {
-  const accordeonBlock = document.querySelector(".accordeon"),
-    elements = accordeonBlock.querySelectorAll(".accordeon-element");
-
-  accordeonBlock.addEventListener("click", (e) => {
-    const target = e.target,
-      parent = target.closest(".accordeon-element");
-
-    if (parent) {
-      if (parent.classList.contains("faq__item--active")) {
-        parent.classList.remove("faq__item--active");
-      } else {
-        elements.forEach((elem) => {
-          elem.classList.remove("faq__item--active");
-          if (elem === parent) {
-            elem.classList.add("faq__item--active");
-          }
-        });
-      }
-    }
-  });
-};
-
 const openModal = () => {
   const overlay = document.querySelector(".overlay");
   const body = document.querySelector("body");
@@ -53,10 +29,6 @@ const openModal = () => {
   const openOverlay = () => {
     overlay.classList.add("overlay--isOpen");
     body.style.overflow = "hidden";
-
-  };
-  const openModal = () => {
-    modal.classList.add("modal--isOpen");
   };
   const openModalForm = () => {
     modalForm.classList.add("modal-form--isOpen");
@@ -71,19 +43,12 @@ const openModal = () => {
     overlay.classList.remove("overlay--isOpen");
     body.style.overflow = "";
   };
-  const closeModal = () => {
-    modal.classList.remove("modal--isOpen");
-  };
   const closeModalForm = () => {
     modalForm.classList.remove("modal-form--isOpen");
   };
 
   body.addEventListener("click", (e) => {
     const target = e.target;
-    if (target.closest(".card")) {
-      openOverlay();
-      openModal();
-    }
     if (target.closest(".header__button")) {
       openOverlay();
       openModalForm();
@@ -94,7 +59,6 @@ const openModal = () => {
     }
     if (target.closest(".modal__close") || target === overlay) {
       closeOverlay();
-      closeModal();
       closeModalForm();
       closeMobileMenu();
     }
@@ -118,7 +82,18 @@ const changeOption = () => {
   });
 };
 
+const openCard = () => {
+    const body = document.querySelector('body');
+    console.log(1);
+    body.addEventListener("click", (e) => {
+        const target = e.target;
+        const parent = target.closest(".sponsor-card");
+        if(parent){
+            parent.classList.toggle("active-card");
+        }
+    });
+};
 
+openCard();
 openModal();
-accordeon();
 changeOption();

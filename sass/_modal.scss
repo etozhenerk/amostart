@@ -41,7 +41,7 @@
   &__name {
     display: block;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 23px;
     line-height: 26px;
     color: $white;
     margin-bottom: 5px;
@@ -53,13 +53,13 @@
   &__description {
     display: block;
     margin-bottom: 11px;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 17px;
+    line-height: 14px;
   }
   &__text {
     width: 323px;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 23px;
     letter-spacing: 0.8px;
   }
   &__img {
@@ -94,6 +94,7 @@
   }
   &-form {
     padding: 60px;
+    padding-right: 71px;
     box-sizing: border-box;
     position: fixed;
     z-index: 4;
@@ -108,6 +109,11 @@
     color: #e5e5e5;
     &--isOpen {
       display: flex;
+    }
+    @media (max-width: 576px) {
+      padding-left: 20px;
+      padding-right: 47px;
+      width: 414px;
     }
   }
 }

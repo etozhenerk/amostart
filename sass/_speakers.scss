@@ -1,7 +1,4 @@
 .speakers {
-  @media (max-width: 576px) {
-    padding-bottom: 70px;
-  }
   &__cards {
     display: flex;
     flex-wrap: wrap;

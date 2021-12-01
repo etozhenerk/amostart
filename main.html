@@ -68,7 +68,7 @@
           </div>
         </div>
         <div class="header__buttons">
-          <button class="header__button">стать участником</button>
+          <button class="header__button button">стать участником</button>
         </div>
         <div class="header__slider">
           <div class="swiper">
@@ -126,13 +126,13 @@
         <div class="container">
           <h3 class="section__title">Пакеты участия</h3>
           <div class="packages__cards">
-            <div class="card packages__card packages-card packages-card--medium packages-card--mobile">
+            <div class="sponsor-card card packages__card packages-card packages-card--medium packages-card--mobile">
               <div class="packages-card__description">
                 <div class="packages-card__title">
                   <span>Специальный партнер</span>
                   <div class="packages-card__icon"></div>
                 </div>
-                <div class="packages-card__text">
+                <div class="sponsor-card__text packages-card__text">
                   <ul class="packages-card__list">
                     <li class="packages-card__item">10-минутное выступление перед основной программой</li>
                     <li class="packages-card__item">Размещение логотипа на сайте конференции</li>
@@ -143,7 +143,7 @@
                 </div>
               </div>
             </div>
-            <div class="card packages__card packages-card packages-card--big packages-card--mobile">
+            <div class="sponsor-card card packages__card packages-card packages-card--big packages-card--mobile">
               <div class="packages-card__img">
                 <img src="./img/packages/card-img.jpg" alt="" />
               </div>
@@ -152,7 +152,7 @@
                   <span>Специальный партнер</span>
                   <div class="packages-card__icon"></div>
                 </div>
-                <div class="packages-card__text">
+                <div class="sponsor-card__text packages-card__text">
                   <ul class="packages-card__list">
                     <li class="packages-card__item">10-минутное выступление перед основной программой</li>
                     <li class="packages-card__item">Размещение логотипа на сайте конференции</li>
@@ -163,7 +163,7 @@
                 </div>
               </div>
             </div>
-            <div class="card packages__card packages-card packages-card--big packages-card--mobile">
+            <div class="sponsor-card card packages__card packages-card packages-card--big packages-card--mobile">
               <div class="packages-card__img">
                 <img src="./img/packages/card-img-2.jpg" alt="" />
               </div>
@@ -172,7 +172,7 @@
                   <span>Специальный партнер</span>
                   <div class="packages-card__icon"></div>
                 </div>
-                <div class="packages-card__text">
+                <div class="sponsor-card__text packages-card__text">
                   <ul class="packages-card__list">
                     <li class="packages-card__item">10-минутное выступление перед основной программой</li>
                     <li class="packages-card__item">Размещение логотипа на сайте конференции</li>
@@ -183,13 +183,13 @@
                 </div>
               </div>
             </div>
-            <div class="card packages__card packages-card packages-card--medium packages-card--mobile">
+            <div class="sponsor-card card packages__card packages-card packages-card--medium packages-card--mobile">
               <div class="packages-card__description">
                 <div class="packages-card__title">
                   <span>Специальный партнер</span>
                   <div class="packages-card__icon"></div>
                 </div>
-                <div class="packages-card__text">
+                <div class="sponsor-card__text packages-card__text">
                   <ul class="packages-card__list">
                     <li class="packages-card__item">10-минутное выступление перед основной программой</li>
                     <li class="packages-card__item">Размещение логотипа на сайте конференции</li>
@@ -207,13 +207,13 @@
         <div class="container">
           <h3 class="section__title">Экспозона</h3>
           <div class="expo__cards">
-            <div class="card expo__card expo-card expo-card--small expo-card--mobile">
+            <div class="sponsor-card card expo__card expo-card expo-card--small expo-card--mobile">
               <div class="expo-card__description">
                 <div class="expo-card__title">
                   <span>Размещение ролл-ап</span>
                   <div class="expo-card__icon"></div>
                 </div>
-                <div class="expo-card__text">
+                <div class="sponsor-card__text expo-card__text">
                   <ul class="expo-card__list">
                     <li class="expo-card__item">Статус “Экспонент</li>
                     <li class="expo-card__item">Стенд до 2 м2</li>
@@ -224,7 +224,7 @@
                 </div>
               </div>
             </div>
-            <div class="card expo__card expo-card expo-card--big expo-card--mobile">
+            <div class="sponsor-card card expo__card expo-card expo-card--big expo-card--mobile">
               <div class="expo-card__img">
                 <img src="./img/expo/Rectangle 170.jpg" alt="" />
               </div>
@@ -233,7 +233,7 @@
                   <span>Генеральный партнер</span>
                   <div class="expo-card__icon"></div>
                 </div>
-                <div class="expo-card__text">
+                <div class="sponsor-card__text expo-card__text">
                   <ul class="expo-card__list">
                     <li class="expo-card__item">Статус “Экспонент”</li>
                     <li class="expo-card__item">Стенд до 6 м2</li>
@@ -380,26 +380,118 @@
         </div>
       </div>
     </footer>
-    <div class="overlay">
-      <div class="modal">
-        <div class="modal__img">
-          <img src="./img/modal/Group 5738.png" alt="" />
+    <div class="overlay"></div>
+    <div class="modal-form">
+      <form action="#" class="form">
+        <input type="text" class="form__input" placeholder="Название компании" />
+        <input type="text" class="form__input" placeholder="Имя Фамилия" />
+        <input type="email" class="form__input" placeholder="E-mail" />
+        <input type="tel" class="form__input" placeholder="8 (800) 123-45-67" />
+        <div class="form__tickets">
+          <span>Количество билетов</span>
+          <div class="select-box">
+            <div class="options-container">
+              <div class="option">
+                <input type="radio" class="form__radio" name="1" id="">
+                <label for="1">1</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="form__radio" name=""2 id="">
+                <label for="2">2</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="form__radio" name="3" id="">
+                <label for="3">3</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="form__radio" name="4" id="">
+                <label for="4">4</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="form__radio" name="5" id="">
+                <label for="5">5</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="form__radio" name="6" id="">
+                <label for="6">6</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="form__radio" name="7" id="">
+                <label for="7">7</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="form__radio" name="8" id="">
+                <label for="8">8</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="form__radio" name="9" id="">
+                <label for="9">9</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="form__radio" name="10" id="">
+                <label for="10">10</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="form__radio" name="11" id="">
+                <label for="11">11</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="form__radio" name="12" id="">
+                <label for="12">12</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="form__radio" name="13" id="">
+                <label for="13">13</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="form__radio" name="14" id="">
+                <label for="14">14</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="form__radio" name="15" id="">
+                <label for="15">15</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="form__radio" name="16" id="">
+                <label for="16">16</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="form__radio" name="17" id="">
+                <label for="17">17</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="form__radio" name="18" id="">
+                <label for="18">18</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="form__radio" name="19" id="">
+                <label for="19">19</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="form__radio" name="20" id="">
+                <label for="20">20</label>
+              </div>
+            </div>
+            <div class="selected">1</div>
+          </div>
         </div>
-        <div class="modal__content">
-          <span class="modal__name">Анна Цфасман</span>
-          <span class="modal__description">Основатель компании ”Даблби”</span>
-          <p class="modal__text">
-            В 2015 основал компанию RocketSales и за пять лет вышел в ТОП партнеров amoCRM в России и СНГ. В 2020 году
-            занял шестое место в рейтинге самых влиятельных CRM-персон в России. Соавтор обучающих курсов
-            «Самостоятельное внедрение amoCRM» и «Управление проектами по Agile».
-          </p>
-        </div>
+        <button class="button form__button">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+        <span class="form__note"
+          >* Нажимая на кнопку, вы даете согласие на обработку
+          <a href="#" class="personal-information">персональных данных.</a></span
+        >
         <div class="modal__close">
           <img src="./img/modal/close.svg" alt="" />
         </div>
-      </div>
+      </form>
+    </div>
+    <div class="mobile-menu">
+      <nav class="mobile-menu__nav">
+        <a href="#" class="mobile-menu__link">Спонсорам</a>
+        <a href="#" class="mobile-menu__link">Участникам</a>
+      </nav>
     </div>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
