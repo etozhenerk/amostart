@@ -33,9 +33,42 @@
     justify-content: space-around;
     flex-wrap: wrap;
   }
-  &__img {
+  &__item {
     margin-right: 30px;
     margin-bottom: 40px;
+    &--sellesta {
+      width: 257px;
+      height: 63px;
+      background-image: url("../img/event-partners/sellesta.png");
+      background-size: cover;
+      &:hover {
+        background-image: url("../img/event-partners/active.png");
+      }
+    }
+    &--completo {
+      width: 161px;
+      height: 57px;
+      background-image: url("../img/event-partners/completo.png");
+      background-size: cover;
+    }
+    &--jobsa {
+      width: 190px;
+      height: 52px;
+      background-image: url("../img/event-partners/jobsa.png");
+      background-size: cover;
+    }
+    &--uis {
+      width: 170px;
+      height: 60px;
+      background-image: url("../img/event-partners/uis.png");
+      background-size: cover;
+    }
+    &--yandex {
+      width: 257px;
+      height: 63px;
+      background-image: url("../img/event-partners/yandex.png");
+      background-size: cover;
+    }
     @media (max-width: 768px) {
       transform: scale(0.7);
       margin-right: 20px;

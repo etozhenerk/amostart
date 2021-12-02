@@ -122,3 +122,6 @@ const changeOption = () => {
 openModal();
 accordeon();
 changeOption();
+
+const covidLabel = document.querySelector('.header__info');
+console.dir(covidLabel);
